@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+body {
+    line-height: 1.6;
+    background-color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* =================FOR NAV BAR ==============*/
+
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    padding: 10px;
+  }
+  
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+  
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+  
+  .topnav .icon {
+    display: none;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  }
+
+
+
+
+
+ .fa {
+    padding: 20px;
+    font-size: 6px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+  }
+
+
+
+.h1 {
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    margin: 40px 0 60px 0;
+}
+form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+#search-input {
+    width: 60%;
+    max-width: 400px;
+    padding: 10px 20px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    font-size: 18px;
+    color: #333;
+}
+#search-button {
+   padding: 10px 20px; 
+   background-color: #138065;
+   color: #fff;
+   border: none;
+   font-size: 18px ;
+   box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+   cursor: pointer;
+   border-radius: 5px;
+   margin-left: 10px;
+}
+
+.search-results {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.search-result{
+    /* margin-bottom: 60px;
+    width: 30%;
+    height:100%;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    overflow: hidden; */
+
+
+    margin-bottom: 50px;
+    width: 30%;
+    height: 250px; /* Set a fixed height for the container */
+    border-radius: 10px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.2);
+    background-color: #ddd;
+    font-size: small;
+    overflow: hidden;
+    
+
+}
+
+.search-result img{
+    width: 100%;
+    height: 80%;
+    object-fit: cover;
+
+}
+
+img {
+    width: 100%;
+    height: 80%;
+    border-radius: 10px;
+    /* object-fit: cover; */
+
+}
+/* a{
+  color: #000;
+} */
+
+
+
+.search-result:hover{
+    img{
+        opacity: 0.8;
+    }
+}
+
+.search-result {
+    font-size: 20px;
+    text-decoration: none;
+    color: #333;
+    padding: 2px;
+    text-transform: capitalize;
+
+}
+
+#show-more-button {
+    background-color: #008cba;
+    font-size: 18px;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+    display: block;
+    margin: 30px auto;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+
+@media screen and (max-width: 768px){
+    .search-result {
+        padding: 20px;
+    }
+    .search-result {
+        width: 45%; 
+    }
+}
+
+@media screen and (max-width: 480px){
+    .search-result {
+        width: 100%; 
+    }
+    
+}
+
+a{
+    text-decoration: none;
+    color: #000000;
+}
+
+
+ /* download-button */
+
+ .download-button {
+  display: inline-block;
+  padding: 8px 12px;
+  margin-top: 10px;
+  background-color: #138065;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.download-button:hover {
+  background-color: #0a5843;
+}
+
+.search-result {
+  position: relative;
+  padding: 20px;
+}
+
+.search-result .download-button {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+/* footer section */
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-top: 20px;
+}
+
+footer a {
+  color: #04AA6D;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+.no-result{
+  background-color: #0000;
+  margin: auto;
+}
+
